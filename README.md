@@ -12,7 +12,7 @@ Demo
 
 
 ## Basic Example
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="css/reveal.css">
