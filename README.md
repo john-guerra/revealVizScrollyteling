@@ -12,7 +12,7 @@ Demo
 
 
 ## Basic Example
-
+```
 <html>
   <head>
     <link rel="stylesheet" href="css/reveal.css">
@@ -57,5 +57,4 @@ Demo
     </script>
   </body>
 </html>
-
-
+```
