@@ -4,7 +4,7 @@ var revealVizScroll = (function(){
   var
     scrollables = {};
 
-  function makeScrollable(name, initFn, scrollFn, stopFn) {
+  function makeScrollable(name, scrollFn, initFn, stopFn) {
     console.log("makeScrollable");
     var slides = d3.select(".slides");
     var s = slides

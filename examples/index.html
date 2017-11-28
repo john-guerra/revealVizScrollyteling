@@ -13,7 +13,7 @@
       .reveal pre {
         font-size:0.3em;
       }
-      
+
     </style>
   </head>
   <body>
@@ -77,9 +77,9 @@
               .attr("cy", function (d, i)  { return i*(4+2) + 50; })
               .attr("r", 2)
               .attr("style", "steelblue");
-      
+
       }
-      
+
       //StepFn Function called every step
       function stepFn(step) {
         if (step === "left") {
@@ -91,7 +91,7 @@
               .attr("cy", function (d, i)  { return i*(4+2) + 50; })
               .attr("r", 2)
               .attr("style", "steelblue");
-      
+
         }
         if (step === "middle") {
           d3.select(this)
@@ -110,18 +110,18 @@
               .style("fill", "darkblue");
         }
       }
-      
+
       // Stop function, what to do if the presentation moves away from the viz. Useful for stoping force simulations
       function stopFn() {
         console.log("Not scrolling anymore :(");
       }
-      
+
       function revealVizScrollCallback() {
         // Create a new scrollable named demo
-        revealVizScroll.makeScrollable("demo", initFn, stepFn, stopFn);
+        revealVizScroll.makeScrollable("demo", stepFn, initFn, stopFn);
       }
-      
-      
+
+
     </script>
     <script>
       Reveal.initialize({
@@ -131,10 +131,10 @@
             callback: revealVizScrollCallback
           }
         ],
-      
+
       });
     </script>
-    
-    
+
+
   </body>
 </html>

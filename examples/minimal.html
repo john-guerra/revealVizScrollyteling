@@ -8,6 +8,14 @@
   <body>
     <div class="reveal">
       <div class="slides">
+        <!-- Optional: Placeholder for your scrollable viz -->
+        <div class="scrollable scrollable-demo">
+          <svg width=400 height=400>
+            <circle cx=200 cy=200 r=20 style="fill:steelblue"></circle>
+          </svg>
+        </div>
+
+        <!-- Your slides -->
         <section>
           <section>
             <h1>No Scrolling</h1>
@@ -28,12 +36,35 @@
     <script src="js/reveal.js"></script>
     <script src="js/d3.v4.min.js"></script>
     <script>
+      function moveLeft(ele) {
+        d3.select(ele)
+          .select("circle")
+          .transition()
+          .duration(1000)
+            .attr("cx", 100);
+      }
+
+      function moveRight(ele) {
+        d3.select(ele)
+          .select("circle")
+          .transition()
+          .duration(1000)
+            .attr("cx", 300);
+      }
+
+      function doStep(step) {
+        if (step==="step 0") moveLeft(this);
+        else if (step==="step 1") moveRight(this);
+      }
+
+    </script>
+    <script>
       Reveal.initialize({
         dependencies: [
           { src : "../revealVizScroll.js",
             async: false,
             callback: function () {
-              revealVizScroll.makeScrollable("demo");
+              revealVizScroll.makeScrollable("demo", doStep);
             }
           }
         ],
