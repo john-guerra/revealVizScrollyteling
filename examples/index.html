@@ -74,8 +74,8 @@
               .enter()
               .append("circle")
               .attr("cx", 50)
-              .attr("cy", function (d, i)  { return i*(4+2) + 50; })
-              .attr("r", 2)
+              .attr("cy", function (d, i)  { return i*(10+2) + 50; })
+              .attr("r", 5)
               .attr("style", "steelblue");
       
       }
@@ -88,8 +88,8 @@
               .transition()
               .duration(1000)
               .attr("cx", 50)
-              .attr("cy", function (d, i)  { return i*(4+2) + 50; })
-              .attr("r", 2)
+              .attr("cy", function (d, i)  { return i*(10+2) + 50; })
+              .attr("r", 5)
               .attr("style", "steelblue");
       
         }
@@ -99,7 +99,7 @@
               .transition()
               .duration(1000)
               .attr("cx", function() { return Math.random()*350; })
-              .attr("cy", function (d, i)  { return i*(4+2) + 50; })
+              .attr("cy", function (d, i)  { return i*(10+2) + 50; })
               .style("fill", "steelblue");
         } else if (step === "down") {
           d3.select(this)
