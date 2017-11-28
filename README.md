@@ -186,4 +186,5 @@ http://johnguerra.co/slides/untanglingTheHairball
 ### Fuller example
 
 Check the [examples](https://github.com/john-guerra/revealVizScrollyteling/tree/master/examples) folder
+[Running demo](https://john-guerra.github.io/revealVizScrollyteling/examples/)
 
