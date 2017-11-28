@@ -27,7 +27,7 @@ http://johnguerra.co/slides/untanglingTheHairball
   </body>
 </html>
 ```
-2) Add the library revealVizScroll.js to Reveal.js dependencies, with a callback that creates your scrollables
+2) Add the library revealVizScroll.js to Reveal.js dependencies, with a callback that creates your scrollables. To create a scrollable use the function `revealVizScroll.makeScrollable(name, stepFunction, [initFunction, [stopFunction]])`. Name is the same name you will use in the scrollable attribute of your slides, stepFunction gets called everytime your slides changed with a parameter identifying the step. The last two parameters correspond to the functions called on init (once at the beginning of your presentation) and on stop (evertime the slides move away of your scrollable).
 ```html
     <script>
       function moveLeft(ele) {
