@@ -1,6 +1,9 @@
 # RevealVizScroll
 
-A Reveal.js plugin for faking visualization scrollyteling. It lets you create incremental visualizations that stay on the screen between slides
+A Reveal.js plugin for faking visualization scrollyteling. It lets you create incremental visualizations that stay on the screen between slides, like this one
+
+![Bigger example](gifs/untanglingTheHairball_scrolling.gif)
+http://johnguerra.co/slides/untanglingTheHairball
 
 Demo
 
@@ -102,8 +105,8 @@ Demo
   </div>
 ```
 
-
 ### Basic Example
+![Basic example](gifs/minimal.gif)
 ```html
 <html>
   <head>
