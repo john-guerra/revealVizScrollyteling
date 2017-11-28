@@ -5,8 +5,6 @@ A Reveal.js plugin for faking visualization scrollyteling. It lets you create in
 ![Bigger example](gifs/untanglingTheHairball_scrolling.gif)
 http://johnguerra.co/slides/untanglingTheHairball
 
-Demo
-
 ## Usage
 
 1) Create your typical reveal.js presentation, then include revealVizScroll.css and d3.v4.js
