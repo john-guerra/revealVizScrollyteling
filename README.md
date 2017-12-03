@@ -2,7 +2,7 @@
 
 A Reveal.js plugin for faking visualization scrollyteling. It lets you create incremental visualizations that stay on the screen between slides, like this one
 
-![Bigger example](gifs/untanglingTheHairball_scrolling.gif)
+![Bigger example](gifs/untanglingTheHairball_scrolling.gif)  
 http://johnguerra.co/slides/untanglingTheHairball
 
 ## Usage
@@ -185,6 +185,4 @@ http://johnguerra.co/slides/untanglingTheHairball
 
 ### Fuller example
 
-Check the [examples](https://github.com/john-guerra/revealVizScrollyteling/tree/master/examples) folder
-[Running demo](https://john-guerra.github.io/revealVizScrollyteling/examples/)
-
+Check the [examples](https://github.com/john-guerra/revealVizScrollyteling/tree/master/examples) folder ([running demo](https://john-guerra.github.io/revealVizScrollyteling/examples/)).
